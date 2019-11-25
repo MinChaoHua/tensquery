@@ -3,6 +3,7 @@ package com.tensquery.search.pojo;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.io.Serializable;
 
@@ -15,10 +16,10 @@ public class Article implements Serializable {
     //是否分词，就是看搜索的时候是整体匹配还是单词匹配
     //是否存储，就是是否在页面上显示
 
-    @Field(index = true,analyzer = "ik_max_word",searchAnalyzer = "ik_max_word")
+    @Field(index = true,analyzer = "ik_max_word",searchAnalyzer = "ik_max_word",type = FieldType.Text)
     private String title;
 
-    @Field(index = true,analyzer = "ik_max_word",searchAnalyzer = "ik_max_word")
+    @Field(index = true,analyzer = "ik_max_word",searchAnalyzer = "ik_max_word",type = FieldType.Text)
     private String content;
 
     private String state;//审核状态
