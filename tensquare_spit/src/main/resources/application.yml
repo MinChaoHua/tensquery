@@ -1,0 +1,11 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: tensquery-spit
+  data:
+    mongodb:
+      host: 123.207.252.249
+      database: spitdb
+  redis:
+    url: 123.207.252.249

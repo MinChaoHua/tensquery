@@ -14,15 +14,18 @@
         <module>tensquare_qa</module>
         <module>tensquare_article</module>
         <module>tensquare_gathering</module>
+        <module>tensquare_spit</module>
+        <module>tensquare_search</module>
     </modules>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.1.RELEASE</version>
+        <version>2.2.0.RELEASE</version>
         <relativePath/>
     </parent>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
